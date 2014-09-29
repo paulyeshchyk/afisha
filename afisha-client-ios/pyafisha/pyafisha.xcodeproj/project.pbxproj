@@ -22,6 +22,14 @@
 		1D2A684D19D95BAD0099EFBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A682C19D95BAC0099EFBE /* UIKit.framework */; };
 		1D2A685519D95BAD0099EFBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A685319D95BAD0099EFBE /* InfoPlist.strings */; };
 		1D2A685719D95BAD0099EFBE /* pyafishaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A685619D95BAD0099EFBE /* pyafishaTests.m */; };
+		1D2A686319D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686119D95C7C0099EFBE /* PYAfisha.xcdatamodeld */; };
+		1D2A686419D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686119D95C7C0099EFBE /* PYAfisha.xcdatamodeld */; };
+		1D2A686719D95CC80099EFBE /* PYCoreDataEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686619D95CC80099EFBE /* PYCoreDataEvent.m */; };
+		1D2A686819D95CC80099EFBE /* PYCoreDataEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686619D95CC80099EFBE /* PYCoreDataEvent.m */; };
+		1D2A686D19D95D480099EFBE /* PYACoreDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */; };
+		1D2A686E19D95D480099EFBE /* PYACoreDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */; };
+		1D2A687419D961330099EFBE /* PYAApplicationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */; };
+		1D2A687519D961330099EFBE /* PYAApplicationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,15 @@
 		1D2A685219D95BAD0099EFBE /* pyafishaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pyafishaTests-Info.plist"; sourceTree = "<group>"; };
 		1D2A685419D95BAD0099EFBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D2A685619D95BAD0099EFBE /* pyafishaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pyafishaTests.m; sourceTree = "<group>"; };
+		1D2A686219D95C7C0099EFBE /* PYAfisha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PYAfisha.xcdatamodel; sourceTree = "<group>"; };
+		1D2A686519D95CC80099EFBE /* PYCoreDataEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCoreDataEvent.h; sourceTree = "<group>"; };
+		1D2A686619D95CC80099EFBE /* PYCoreDataEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCoreDataEvent.m; sourceTree = "<group>"; };
+		1D2A686B19D95D480099EFBE /* PYACoreDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYACoreDataProvider.h; sourceTree = "<group>"; };
+		1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYACoreDataProvider.m; sourceTree = "<group>"; };
+		1D2A687019D95EA90099EFBE /* PYANotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYANotifications.h; sourceTree = "<group>"; };
+		1D2A687119D95EC20099EFBE /* PYAfisha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYAfisha.h; sourceTree = "<group>"; };
+		1D2A687219D95FD80099EFBE /* PYAApplicationFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYAApplicationFunctions.h; sourceTree = "<group>"; };
+		1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAApplicationFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +131,8 @@
 		1D2A682E19D95BAC0099EFBE /* pyafisha */ = {
 			isa = PBXGroup;
 			children = (
+				1D2A686919D95D2F0099EFBE /* core */,
+				1D2A686019D95C600099EFBE /* model */,
 				1D2A683719D95BAC0099EFBE /* PYAAppDelegate.h */,
 				1D2A683819D95BAC0099EFBE /* PYAAppDelegate.m */,
 				1D2A683A19D95BAC0099EFBE /* Main_iPhone.storyboard */,
@@ -153,6 +172,45 @@
 				1D2A685319D95BAD0099EFBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D2A686019D95C600099EFBE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A686119D95C7C0099EFBE /* PYAfisha.xcdatamodeld */,
+				1D2A686519D95CC80099EFBE /* PYCoreDataEvent.h */,
+				1D2A686619D95CC80099EFBE /* PYCoreDataEvent.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1D2A686919D95D2F0099EFBE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A686F19D95E9C0099EFBE /* common */,
+				1D2A686A19D95D2F0099EFBE /* coredata */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		1D2A686A19D95D2F0099EFBE /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A686B19D95D480099EFBE /* PYACoreDataProvider.h */,
+				1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		1D2A686F19D95E9C0099EFBE /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A687019D95EA90099EFBE /* PYANotifications.h */,
+				1D2A687119D95EC20099EFBE /* PYAfisha.h */,
+				1D2A687219D95FD80099EFBE /* PYAApplicationFunctions.h */,
+				1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2A686D19D95D480099EFBE /* PYACoreDataProvider.m in Sources */,
+				1D2A686719D95CC80099EFBE /* PYCoreDataEvent.m in Sources */,
+				1D2A686319D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */,
+				1D2A687419D961330099EFBE /* PYAApplicationFunctions.m in Sources */,
 				1D2A683519D95BAC0099EFBE /* main.m in Sources */,
 				1D2A683919D95BAC0099EFBE /* PYAAppDelegate.m in Sources */,
 				1D2A684219D95BAC0099EFBE /* PYAViewController.m in Sources */,
@@ -264,7 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2A686419D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */,
 				1D2A685719D95BAD0099EFBE /* pyafishaTests.m in Sources */,
+				1D2A686E19D95D480099EFBE /* PYACoreDataProvider.m in Sources */,
+				1D2A686819D95CC80099EFBE /* PYCoreDataEvent.m in Sources */,
+				1D2A687519D961330099EFBE /* PYAApplicationFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +547,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D2A686119D95C7C0099EFBE /* PYAfisha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D2A686219D95C7C0099EFBE /* PYAfisha.xcdatamodel */,
+			);
+			currentVersion = 1D2A686219D95C7C0099EFBE /* PYAfisha.xcdatamodel */;
+			path = PYAfisha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1D2A681D19D95BAC0099EFBE /* Project object */;
 }

@@ -7,12 +7,27 @@
 //
 
 #import "PYAAppDelegate.h"
+#import "PYACoreDataProvider.h"
+#import "PYCoreDataEvent.h"
 
 @implementation PYAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+
+    PYACoreDataProvider *provider = [PYACoreDataProvider sharedInstance];
+    NSManagedObjectContext *managedObjectContext = [provider managedObjectContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    request.fetchLimit = 1;
+    request.entity = [NSEntityDescription entityForName:NSStringFromClass([PYCoreDataEvent class]) inManagedObjectContext:managedObjectContext];
+
+    [managedObjectContext executeFetchRequest:request error:NULL];
+    
+    
     return YES;
 }
 							
