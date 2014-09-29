@@ -16,7 +16,8 @@
 
 @property (nonatomic, weak)IBOutlet UITableView *tableView;
 @property (nonatomic, strong)NSFetchedResultsController *fetchedResultController;
-
+@property (nonatomic, weak)IBOutlet UIBarButtonItem *reorderModeButton;
+@property (nonatomic, assign) BOOL editingMode;
 @end
 
 @implementation PYAEventListViewController
@@ -39,6 +40,7 @@
 {
     [super viewDidLoad];
 
+    self.editingMode = NO;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"PYAEventListTableViewCell" bundle:nil] forCellReuseIdentifier:@"PYAEventListTableViewCell"];
     // Override point for customization after application launch.
@@ -54,11 +56,25 @@
 
 }
 
+- (void)setEditingMode:(BOOL)editingMode {
+    
+    _editingMode = editingMode;
+    [self.reorderModeButton setTitle:_editingMode?@"normal":@"reorder"];
+    [self.tableView setEditing:_editingMode animated:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)reorderMode:(id)sender {
+
+    self.editingMode = !self.editingMode;
+}
+
 
 
 - (IBAction)onAddClicked:(id)sender {
@@ -96,6 +112,34 @@
     [self configureCell:result atIndexPath:indexPath];
     
     return result;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    dispatch_async([PYACoreDataQueueManager coreDataOperationsSerialQueue], ^(){
+        
+        id obj = [self.fetchedResultController objectAtIndexPath:indexPath];
+        if (editingStyle == UITableViewCellEditingStyleDelete) {
+            
+            dispatch_async([PYACoreDataQueueManager coreDataOperationsSerialQueue], ^{
+            
+                NSManagedObjectContext *workingContext = [PYACoreDataProvider workingContext];
+                id objToDelete = [workingContext objectWithID:[obj objectID]];
+                [workingContext deleteObject:objToDelete];
+                [PYACoreDataProvider saveWorkingContext:workingContext error:NULL];
+            });
+        }
+    });
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return YES;
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
