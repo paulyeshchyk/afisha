@@ -15,7 +15,6 @@
 		1D2A683919D95BAC0099EFBE /* PYAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A683819D95BAC0099EFBE /* PYAAppDelegate.m */; };
 		1D2A683C19D95BAC0099EFBE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A683A19D95BAC0099EFBE /* Main_iPhone.storyboard */; };
 		1D2A683F19D95BAC0099EFBE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A683D19D95BAC0099EFBE /* Main_iPad.storyboard */; };
-		1D2A684219D95BAC0099EFBE /* PYAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A684119D95BAC0099EFBE /* PYAViewController.m */; };
 		1D2A684419D95BAC0099EFBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A684319D95BAC0099EFBE /* Images.xcassets */; };
 		1D2A684B19D95BAD0099EFBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A684A19D95BAD0099EFBE /* XCTest.framework */; };
 		1D2A684C19D95BAD0099EFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A682819D95BAC0099EFBE /* Foundation.framework */; };
@@ -30,6 +29,20 @@
 		1D2A686E19D95D480099EFBE /* PYACoreDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */; };
 		1D2A687419D961330099EFBE /* PYAApplicationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */; };
 		1D2A687519D961330099EFBE /* PYAApplicationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */; };
+		1D2A687A19D96D4F0099EFBE /* PYAEventDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687919D96D4F0099EFBE /* PYAEventDatasource.m */; };
+		1D2A687B19D96D4F0099EFBE /* PYAEventDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A687919D96D4F0099EFBE /* PYAEventDatasource.m */; };
+		1D2A688319D9743E0099EFBE /* PYAEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688119D9743E0099EFBE /* PYAEventListViewController.m */; };
+		1D2A688419D9743E0099EFBE /* PYAEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688119D9743E0099EFBE /* PYAEventListViewController.m */; };
+		1D2A688519D9743E0099EFBE /* PYAEventListViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A688219D9743E0099EFBE /* PYAEventListViewController~iphone.xib */; };
+		1D2A688619D9743E0099EFBE /* PYAEventListViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A688219D9743E0099EFBE /* PYAEventListViewController~iphone.xib */; };
+		1D2A688919D974810099EFBE /* PYAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688819D974810099EFBE /* PYAViewController.m */; };
+		1D2A688A19D974810099EFBE /* PYAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688819D974810099EFBE /* PYAViewController.m */; };
+		1D2A688D19D97FBA0099EFBE /* PYACoreDataQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688C19D97FBA0099EFBE /* PYACoreDataQueueManager.m */; };
+		1D2A688E19D97FBA0099EFBE /* PYACoreDataQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A688C19D97FBA0099EFBE /* PYACoreDataQueueManager.m */; };
+		1D2A689219D9826B0099EFBE /* PYAEventListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A689019D9826B0099EFBE /* PYAEventListTableViewCell.m */; };
+		1D2A689319D9826B0099EFBE /* PYAEventListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A689019D9826B0099EFBE /* PYAEventListTableViewCell.m */; };
+		1D2A689419D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A689119D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib */; };
+		1D2A689519D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2A689119D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +68,6 @@
 		1D2A683819D95BAC0099EFBE /* PYAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYAAppDelegate.m; sourceTree = "<group>"; };
 		1D2A683B19D95BAC0099EFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		1D2A683E19D95BAC0099EFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		1D2A684019D95BAC0099EFBE /* PYAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYAViewController.h; sourceTree = "<group>"; };
-		1D2A684119D95BAC0099EFBE /* PYAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYAViewController.m; sourceTree = "<group>"; };
 		1D2A684319D95BAC0099EFBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D2A684919D95BAD0099EFBE /* pyafishaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyafishaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2A684A19D95BAD0099EFBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -72,6 +83,19 @@
 		1D2A687119D95EC20099EFBE /* PYAfisha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYAfisha.h; sourceTree = "<group>"; };
 		1D2A687219D95FD80099EFBE /* PYAApplicationFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYAApplicationFunctions.h; sourceTree = "<group>"; };
 		1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAApplicationFunctions.m; sourceTree = "<group>"; };
+		1D2A687819D96D4F0099EFBE /* PYAEventDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAEventDatasource.h; sourceTree = "<group>"; };
+		1D2A687919D96D4F0099EFBE /* PYAEventDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAEventDatasource.m; sourceTree = "<group>"; };
+		1D2A687C19D96D680099EFBE /* PYADatasourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYADatasourceProtocol.h; sourceTree = "<group>"; };
+		1D2A688019D9743E0099EFBE /* PYAEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAEventListViewController.h; sourceTree = "<group>"; };
+		1D2A688119D9743E0099EFBE /* PYAEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAEventListViewController.m; sourceTree = "<group>"; };
+		1D2A688219D9743E0099EFBE /* PYAEventListViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PYAEventListViewController~iphone.xib"; sourceTree = "<group>"; };
+		1D2A688719D974810099EFBE /* PYAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAViewController.h; sourceTree = "<group>"; };
+		1D2A688819D974810099EFBE /* PYAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAViewController.m; sourceTree = "<group>"; };
+		1D2A688B19D97FBA0099EFBE /* PYACoreDataQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYACoreDataQueueManager.h; sourceTree = "<group>"; };
+		1D2A688C19D97FBA0099EFBE /* PYACoreDataQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYACoreDataQueueManager.m; sourceTree = "<group>"; };
+		1D2A688F19D9826B0099EFBE /* PYAEventListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYAEventListTableViewCell.h; sourceTree = "<group>"; };
+		1D2A689019D9826B0099EFBE /* PYAEventListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYAEventListTableViewCell.m; sourceTree = "<group>"; };
+		1D2A689119D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PYAEventListTableViewCell~iphone.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,14 +155,13 @@
 		1D2A682E19D95BAC0099EFBE /* pyafisha */ = {
 			isa = PBXGroup;
 			children = (
+				1D2A687D19D973FA0099EFBE /* ux */,
 				1D2A686919D95D2F0099EFBE /* core */,
 				1D2A686019D95C600099EFBE /* model */,
 				1D2A683719D95BAC0099EFBE /* PYAAppDelegate.h */,
 				1D2A683819D95BAC0099EFBE /* PYAAppDelegate.m */,
 				1D2A683A19D95BAC0099EFBE /* Main_iPhone.storyboard */,
 				1D2A683D19D95BAC0099EFBE /* Main_iPad.storyboard */,
-				1D2A684019D95BAC0099EFBE /* PYAViewController.h */,
-				1D2A684119D95BAC0099EFBE /* PYAViewController.m */,
 				1D2A684319D95BAC0099EFBE /* Images.xcassets */,
 				1D2A682F19D95BAC0099EFBE /* Supporting Files */,
 			);
@@ -187,6 +210,7 @@
 		1D2A686919D95D2F0099EFBE /* core */ = {
 			isa = PBXGroup;
 			children = (
+				1D2A687619D96D2F0099EFBE /* datasource */,
 				1D2A686F19D95E9C0099EFBE /* common */,
 				1D2A686A19D95D2F0099EFBE /* coredata */,
 			);
@@ -198,6 +222,8 @@
 			children = (
 				1D2A686B19D95D480099EFBE /* PYACoreDataProvider.h */,
 				1D2A686C19D95D480099EFBE /* PYACoreDataProvider.m */,
+				1D2A688B19D97FBA0099EFBE /* PYACoreDataQueueManager.h */,
+				1D2A688C19D97FBA0099EFBE /* PYACoreDataQueueManager.m */,
 			);
 			path = coredata;
 			sourceTree = "<group>";
@@ -211,6 +237,55 @@
 				1D2A687319D961330099EFBE /* PYAApplicationFunctions.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		1D2A687619D96D2F0099EFBE /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A687719D96D2F0099EFBE /* pyeventdatasource */,
+				1D2A687C19D96D680099EFBE /* PYADatasourceProtocol.h */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		1D2A687719D96D2F0099EFBE /* pyeventdatasource */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A687819D96D4F0099EFBE /* PYAEventDatasource.h */,
+				1D2A687919D96D4F0099EFBE /* PYAEventDatasource.m */,
+			);
+			path = pyeventdatasource;
+			sourceTree = "<group>";
+		};
+		1D2A687D19D973FA0099EFBE /* ux */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A688719D974810099EFBE /* PYAViewController.h */,
+				1D2A688819D974810099EFBE /* PYAViewController.m */,
+				1D2A687F19D974250099EFBE /* EventDetailViewController */,
+				1D2A687E19D974140099EFBE /* EventListViewController */,
+			);
+			path = ux;
+			sourceTree = "<group>";
+		};
+		1D2A687E19D974140099EFBE /* EventListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A688019D9743E0099EFBE /* PYAEventListViewController.h */,
+				1D2A688119D9743E0099EFBE /* PYAEventListViewController.m */,
+				1D2A688219D9743E0099EFBE /* PYAEventListViewController~iphone.xib */,
+				1D2A688F19D9826B0099EFBE /* PYAEventListTableViewCell.h */,
+				1D2A689019D9826B0099EFBE /* PYAEventListTableViewCell.m */,
+				1D2A689119D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib */,
+			);
+			path = EventListViewController;
+			sourceTree = "<group>";
+		};
+		1D2A687F19D974250099EFBE /* EventDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +368,8 @@
 				1D2A683F19D95BAC0099EFBE /* Main_iPad.storyboard in Resources */,
 				1D2A684419D95BAC0099EFBE /* Images.xcassets in Resources */,
 				1D2A683C19D95BAC0099EFBE /* Main_iPhone.storyboard in Resources */,
+				1D2A689419D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib in Resources */,
+				1D2A688519D9743E0099EFBE /* PYAEventListViewController~iphone.xib in Resources */,
 				1D2A683319D95BAC0099EFBE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2A689519D9826B0099EFBE /* PYAEventListTableViewCell~iphone.xib in Resources */,
+				1D2A688619D9743E0099EFBE /* PYAEventListViewController~iphone.xib in Resources */,
 				1D2A685519D95BAD0099EFBE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,12 +392,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D2A686D19D95D480099EFBE /* PYACoreDataProvider.m in Sources */,
+				1D2A688319D9743E0099EFBE /* PYAEventListViewController.m in Sources */,
+				1D2A688919D974810099EFBE /* PYAViewController.m in Sources */,
 				1D2A686719D95CC80099EFBE /* PYCoreDataEvent.m in Sources */,
 				1D2A686319D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */,
+				1D2A688D19D97FBA0099EFBE /* PYACoreDataQueueManager.m in Sources */,
+				1D2A689219D9826B0099EFBE /* PYAEventListTableViewCell.m in Sources */,
 				1D2A687419D961330099EFBE /* PYAApplicationFunctions.m in Sources */,
 				1D2A683519D95BAC0099EFBE /* main.m in Sources */,
 				1D2A683919D95BAC0099EFBE /* PYAAppDelegate.m in Sources */,
-				1D2A684219D95BAC0099EFBE /* PYAViewController.m in Sources */,
+				1D2A687A19D96D4F0099EFBE /* PYAEventDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +411,14 @@
 			files = (
 				1D2A686419D95C7C0099EFBE /* PYAfisha.xcdatamodeld in Sources */,
 				1D2A685719D95BAD0099EFBE /* pyafishaTests.m in Sources */,
+				1D2A688419D9743E0099EFBE /* PYAEventListViewController.m in Sources */,
+				1D2A689319D9826B0099EFBE /* PYAEventListTableViewCell.m in Sources */,
 				1D2A686E19D95D480099EFBE /* PYACoreDataProvider.m in Sources */,
 				1D2A686819D95CC80099EFBE /* PYCoreDataEvent.m in Sources */,
+				1D2A687B19D96D4F0099EFBE /* PYAEventDatasource.m in Sources */,
 				1D2A687519D961330099EFBE /* PYAApplicationFunctions.m in Sources */,
+				1D2A688E19D97FBA0099EFBE /* PYACoreDataQueueManager.m in Sources */,
+				1D2A688A19D974810099EFBE /* PYAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
